@@ -20,13 +20,59 @@ function displayContent(labNumber) {
         createSubMenu(1);
     }
     if (labNumber === 2) {
-        // Встановити зміст лабораторної роботи для першої роботи
         labContent = `
             <h3>Лабораторна робота № 2</h3>
             <p>Скористайтесь меню змісту звіту</p> 
         `;
-        // Створити меню змісту для першої роботи
         createSubMenu(2);
+    }
+
+    if (labNumber === 3) {
+        labContent = `
+            <h3>Лабораторна робота № 3</h3>
+            <p>Скористайтесь меню змісту звіту</p> 
+        `;
+        createSubMenu(3);
+    }
+
+    if (labNumber === 4) {
+        labContent = `
+            <h3>Лабораторна робота № 4</h3>
+            <p>Скористайтесь меню змісту звіту</p> 
+        `;
+        createSubMenu(4);
+    }
+
+    if (labNumber === 5) {
+        labContent = `
+            <h3>Лабораторна робота № 5</h3>
+            <p>Скористайтесь меню змісту звіту</p> 
+        `;
+        createSubMenu(5);
+    }
+
+    if (labNumber === 6) {
+        labContent = `
+            <h3>Лабораторна робота № 6</h3>
+            <p>Скористайтесь меню змісту звіту</p> 
+        `;
+        createSubMenu(6);
+    }
+
+    if (labNumber === 7) {
+        labContent = `
+            <h3>Лабораторна робота № 7</h3>
+            <p>Скористайтесь меню змісту звіту</p> 
+        `;
+        createSubMenu(7);
+    }
+
+    if (labNumber === 8) {
+        labContent = `
+            <h3>Лабораторна робота № 8</h3>
+            <p>Скористайтесь меню змісту звіту</p> 
+        `;
+        createSubMenu(8);
     }
     // Вивести зміст лабораторної роботи в відповідний блок
     document.getElementById("lab-content").innerHTML = labContent;
@@ -159,6 +205,95 @@ else if (labNumber === 2) {
     };
     menu.appendChild(button29);
 }
+
+else if (labNumber === 3) {
+    
+    let button301 = document.createElement("button");
+    button301.textContent = "Тема, мета ЛР №3. Місце розташування сайту, звіту";
+    button301.onclick = function() {
+        displaySubMenuContent("Тема, мета ЛР №3 Місце розташування сайту, звіту");
+    };
+    menu.appendChild(button301);
+
+    let button302 = document.createElement("button");
+    button302.textContent = "ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету";
+    button302.onclick = function() {
+        displaySubMenuContent("ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету");
+    };
+    menu.appendChild(button302);
+
+    let button303 = document.createElement("button");
+    button303.textContent = "ЗАВДАННЯ №2";
+    button303.onclick = function() {
+        displaySubMenuContent("ЗАВДАННЯ №2");
+    };
+    menu.appendChild(button303);
+
+    let button304 = document.createElement("button");
+    button304.textContent = "Фіксована таблична верстка";
+    button304.onclick = function() {
+        displaySubMenuContent("Фіксована таблична верстка");
+    };
+    menu.appendChild(button304);
+
+    let button305 = document.createElement("button");
+    button305.textContent = "Гумова таблична верстка";
+    button305.onclick = function() {
+        displaySubMenuContent("Гумова таблична верстка");
+    };
+    menu.appendChild(button305);
+
+    let button306 = document.createElement("button");
+    button306.textContent = "Фіксована блокова верстка";
+    button306.onclick = function() {
+        displaySubMenuContent("Фіксована блокова верстка");
+    };
+    menu.appendChild(button306);
+
+    let button307 = document.createElement("button");
+    button307.textContent = "Гумова блокова верстка";
+    button307.onclick = function() {
+        displaySubMenuContent("Гумова блокова верстка");
+    };
+    menu.appendChild(button307);
+
+    let button308 = document.createElement("button");
+    button308.textContent = "ЗАВДАННЯ №3 FLEXBOX";
+    button308.onclick = function() {
+        displaySubMenuContent("ЗАВДАННЯ №3 FLEXBOX");
+    };
+    menu.appendChild(button308);
+
+    let button309 = document.createElement("button");
+    button309.textContent = "Зовнішній вигляд сторінки";
+    button309.onclick = function() {
+        displaySubMenuContent("Зовнішній вигляд сторінки");
+    };
+    menu.appendChild(button309);
+
+    let button310 = document.createElement("button");
+    button310.textContent = "HTML-код";
+    button310.onclick = function() {
+        displaySubMenuContent("HTML-код");
+    };
+    menu.appendChild(button310);
+
+    let button311 = document.createElement("button");
+    button311.textContent = "CSS-код сторінки";
+    button311.onclick = function() {
+        displaySubMenuContent("CSS-код сторінки");
+    };
+    menu.appendChild(button311);
+
+    let button312 = document.createElement("button");
+    button312.textContent = "ВИСНОВКИ до ЛР №3";
+    button312.onclick = function() {
+        displaySubMenuContent("ВИСНОВКИ до ЛР №3");
+    };
+    menu.appendChild(button312);
+}
+
+
 }
 // Викликаємо функцію після завантаження сторінки
 window.onload = function() {
@@ -570,6 +705,157 @@ function displaySubMenuContent(buttonText) {
                 `;
                 break;
 
+        case "Тема, мета ЛР №3 Місце розташування сайту, звіту":
+        contentHTML = `
+            <h3>Тема, мета ЛР №3. Місце розташування сайту, звіту</h3>
+            <p>Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА.  ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.</p>
+
+            <p>Мета:</p>
+            <p>⎯	придбати практичні навички роботи  верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок</p>
+            <p>⎯	придбати практичні навички роботи  верстки сторінок засобами CSS та FLEXBOX</p>   
+                
+            <h3>Місце розташування ЛР №3</h3>
+            <p>Розміщено на GitHub</p>
+            <p><a href="https://github.com/mavi-fiot/LR3zvitLR" target="_blank">Звіт.</a> <a href="https://mavi-fiot.github.io/LR3zvitLR/" target="_blank">Сайт звіту.</a></p>
+            <p><a href="https://github.com/mavi-fiot/LR3WebStore" target="_blank">Проект.</a> <a href="https://mavi-fiot.github.io/LR3WebStore/" target="_blank">Сайт проекту.</a></p>
+                
+            `;
+            break;
+
+        case "ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету":
+            contentHTML = `
+                <h3>ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету</h3>
+                <p>Зовнішній вигляд макету:</p>
+                <img src="LR3_11.png" alt="LR3_11">                   
+
+
+                <p>Код макету:</p>
+                <img src="LR3_12.png" alt="LR3_12">              
+                <img src="LR3_13.png" alt="LR3_13">                  
+                <img src="LR3_14.png" alt="LR3_14">                   
+                              
+            `;
+            break;
+        
+        case "ЗАВДАННЯ №2":
+            contentHTML = `
+                <h3>ЗАВДАННЯ №2</h3>
+
+                <p>Фіксовані і гумові табличні та блокові верстки</p>              
+                                              
+            `;
+            break;
+
+            case "Фіксована таблична верстка":
+                contentHTML = `
+                    <h3>Фіксована таблична верстка</h3>    
+                    
+                    <img src="LR3_21.png" alt="LR3_21">                   
+                    
+                                  
+                `;
+                break;
+            case "Гумова таблична верстка":
+            contentHTML = `
+                <h3>Гумова таблична верстка</h3>
+                <img src="LR3_22.png" alt="LR3_22">                   
+                                              
+                `;
+                break;
+
+            case "Фіксована блокова верстка":
+            contentHTML = `
+                <h3>Фіксована блокова верстка</h3>
+                <img src="LR3_23.png" alt="LR3_23">                   
+                                              
+                `;
+                break;
+
+            case "Гумова блокова верстка":
+            contentHTML = `
+                <h3>Гумова блокова верстка</h3>
+                <img src="LR3_24.png" alt="LR3_24">                   
+
+                `;
+                break;
+
+            case "ЗАВДАННЯ №3 FLEXBOX":
+            contentHTML = `
+                <h3>ЗАВДАННЯ №3 FLEXBOX</h3>
+
+                <p>Flexbox (Flexible Box Layout) - це технологія CSS, яка забезпечує багатофункціональність для 
+                розташування елементів в контейнері. За допомогою Flexbox ви можете легко створювати гнучкі та 
+                респонсивні макети, контролювати порядок, вирівнювання та розміри елементів на веб-сторінці. </p>                             
+                <p>Основні концепції Flexbox включають у себе: </p>
+                
+                <p>Гнучкі контейнери (Flex Containers): Елементи, які мають властивість display: 
+                flex або display: inline-flex, стають гнучкими контейнерами, які можна організовувати 
+                за допомогою властивостей Flexbox. </p>
+                
+                <p>Гнучкі елементи (Flex Items): Дочірні елементи гнучкого контейнера, які вирівнюються та розміщаються за допомогою Flexbox.</p>
+                
+                <p>Основні (main) та бічні (cross) вісі: Flexbox працює на основі вісей, де головна вісь 
+                вказує напрямок розташування елементів (зазвичай горизонтально), а бічна вісь використовується 
+                для вирівнювання та розташування елементів у поперечному напрямку (зазвичай вертикально).</p>
+                
+                <p>Гнучкі властивості (Flex Properties): Flexbox має низку властивостей, 
+                таких як justify-content, align-items, flex-direction, які використовуються 
+                для керування розміщенням та вирівнюванням елементів в гнучкому контейнері.</p>
+                
+                <p>Flexbox дозволяє створювати складні макети і вирішувати багато задач з розміщенням елементів 
+                на веб-сторінці з меншим кодом та більшою гнучкістю. Він є потужним інструментом для розробників 
+                веб-сайтів і допомагає забезпечити ефективність та консистентність у створенні різноманітних макетів.</p>
+                
+                `;
+                break;
+
+            case "Зовнішній вигляд сторінки":
+            contentHTML = `
+                <h3>Зовнішній вигляд сторінки</h3>
+
+                <img src="LR3_311.png" alt="LR3_311">                   
+
+                `;
+                break;
+
+            case "HTML-код":
+            contentHTML = `
+                <h3>HTML-код</h3>
+
+                <img src="LR3_321.png" alt="LR3_321">                   
+                <img src="LR3_322.png" alt="LR3_322">                   
+                
+                `;
+                break;
+
+            case "CSS-код сторінки":
+            contentHTML = `
+                <h3>CSS-код сторінки</h3>
+
+                <img src="LR3_331.png" alt="LR3_331">                   
+                <img src="LR3_332.png" alt="LR3_332">                   
+                <img src="LR3_333.png" alt="LR3_333">                   
+                <img src="LR3_334.png" alt="LR3_334">                   
+                
+                `;
+                break;
+
+            case "ВИСНОВКИ до ЛР №3":
+            contentHTML = `
+                <h3>ВИСНОВКИ до ЛР №3</h3>
+
+                <p>В ході виконання лабораторної роботи набуто практичних навичок роботи  
+                верстки сторінок засобами CSS, верстки на основі плаваючих елементів, 
+                з’ясувати переваги та недоліки типів макетів веб-сторінок. Визначено доцільність 
+                використання переважно блокової верстки, що дозволяє використовувати більше 
+                інструментів аніж за табличною варіацією, спрощує процедури розробки сайту, 
+                підвищує рівень користувацької зручності та зручності обслуговування. При цьому, не слід
+                відкидати допустимістьвикористання табличних технологій за окремими елементами (в разі потреби).</p>
+                
+                `;
+                break;
+
+           
         default:
             contentHTML = "<p>Тут має відображатися зміст вибраного пункту меню.</p>";
             break;
